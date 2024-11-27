@@ -10,7 +10,7 @@
   <title>Kinetik</title>
 </head>
 
-<body>
+<body class="bg-light">
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -43,7 +43,52 @@
     </div>
   </nav>
 
-  <h1>pagina de contacto</h1>
+  <!-- Sección de contacto -->
+  <div class="container my-5">
+    <div class="row g-4">
+
+      <!-- Información de contacto y Mapa -->
+      <div class="col-md-6">
+        <h2 class="h4 mb-4">Contáctanos</h2>
+
+        <!-- Información de contacto -->
+        <ul class="list-unstyled mb-4">
+          <li><i class="bi bi-geo-alt-fill"></i> Dirección: Calle Ficticia 123, Barranquilla, Colombia</li>
+          <li><i class="bi bi-telephone-fill"></i> Teléfono: 311 350 34 00</li>
+          <li><i class="bi bi-envelope-fill"></i> Correo: info@kinetik.com</li>
+        </ul>
+
+        <!-- Mapa de Google -->
+        <h3 class="h5 mb-3">Encuéntranos aquí</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13654.885691378226!2d-74.80435547207149!3d11.00535398858172!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1732674010720!5m2!1ses!2sco"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+
+
+      <!-- Formulario de contacto -->
+      <div class="col-md-6">
+        <h2 class="h4 mb-4">Envíanos un mensaje</h2>
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
 
   <!-- PIE DE PAGINA -->
   <footer class="bg-dark text-white pt-5 pb-4">

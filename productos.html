@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <title>Kinetik</title>
 </head>
 
@@ -34,8 +35,8 @@
         <div class="navbar-nav ms-auto align-items-center fs-5">
           <a class="nav-link active" aria-current="page" href="acercade.html">Acerca de</a>
           <a class="nav-link active" aria-current="page" href="compras.html">Compras</a>
-          <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
           <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+          <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
           <a class="nav-link"><i class="bi bi-person-circle text-white"></i></a>
           <a class="nav-link"><i class="bi bi-cart-check text-white"></i></a>
         </div>
@@ -43,249 +44,121 @@
     </div>
   </nav>
 
-  <!-- Menú de opciones -->
-  <nav class="mb-4">
-    <ul class="nav justify-content-center bg-light py-2 shadow-sm">
-      <li class="nav-item">
-        <a class="nav-link active text-dark" href="#">Todos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="#">Hombres</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="#">Mujeres</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="#">Ofertas</a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Contenido principal -->
-  <section class="bg-light py-5">
+  <div class="bg-light py-5">
     <div class="container">
       <div class="row">
+        <!-- Columna de imágenes -->
+        <div class="col-lg-5 mt-4">
+          <div class="card mb-3">
+            <img class="card-img img-fluid" src="./assets/img/productos/adidas-performance-4043.webp"
+              alt="Imagen principal del producto">
+          </div>
 
-        <!-- Barra lateral -->
-        <aside class="col-12 col-md-3 mb-4">
-          <div class="p-3 border bg-white shadow-sm rounded">
-            <h5 class="fw-bold">Filtrar por</h5>
-            <div class="mb-3">
-              <h6 class="text-muted">Categorías</h6>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-dark text-decoration-none">Todos</a></li>
-                <li><a href="#" class="text-dark text-decoration-none">Zapatos</a></li>
-                <li><a href="#" class="text-dark text-decoration-none">Deportivos</a></li>
-                <li><a href="#" class="text-dark text-decoration-none">Ofertas</a></li>
-              </ul>
+          <div class="row justify-content-center">
+            <!-- Botón Anterior -->
+            <div class="col-1 d-flex align-items-center">
+              <a href="#multi-item-example" role="button" data-bs-slide="prev" class="text-dark">
+                <i class="fas fa-chevron-left"></i>
+                <span class="sr-only">Anterior</span>
+              </a>
             </div>
-            <div class="mb-3">
-              <h6 class="text-muted">Precio</h6>
-              <input type="range" class="form-range">
+
+            <!-- Carrusel de imágenes -->
+            <div id="multi-item-example" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/img/productos/adidas-performance-4096.webp" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/productos/adidas-performance-4096.webp" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/productos/adidas-performance-4096.webp" alt="">
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de Siguiente -->
+            <div class="col-1 d-flex align-items-center">
+              <a href="#multi-item-example" role="button" data-bs-slide="next" class="text-dark">
+                <i class="fas fa-chevron-right"></i>
+                <span class="sr-only">Siguiente</span>
+              </a>
             </div>
           </div>
-        </aside>
+        </div>
 
-        <!-- Productos -->
-        <div class="col-12 col-md-9">
-          <div class="row g-4">
-            <!-- Producto 1 -->
-            <div class="col-12 col-md-4">
-              <div class="card border-0 shadow-lg h-100">
-                <div class="position-relative">
-                  <img src="./assets/img/productos/adidas-performance-4043.webp" class="card-img-top">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title fw-bold">
-                    <a href="#" class="text-decoration-none text-dark">Nike Air Max</a>
-                  </h5>
-                  <p class="card-text text-muted">La mejor tecnología de Nike</p>
-                  <button class="btn btn-primary w-100">Comprar</button>
-                </div>
-              </div>
-            </div>
+        <!-- Columna de detalles del producto -->
+        <div class="col-lg-7 mt-4">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="h2 text-uppercase font-weight-bold">Nike</h1>
+              <p class="h3 py-2 text-success">$250.000</p>
 
-            <!-- Producto 2 -->
-            <div class="col-12 col-md-4">
-              <div class="card border-0 shadow-lg h-100">
-                <div class="position-relative">
-                  <img src="./assets/img/productos/adidas-performance-4096.webp" class="card-img-top">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title fw-bold">
-                    <a href="#" class="text-decoration-none text-dark">Nike Air Max</a>
-                  </h5>
-                  <p class="card-text text-muted">La mejor tecnología de Nike</p>
-                  <button class="btn btn-primary w-100">Comprar</button>
-                </div>
+              <div class="py-2">
+                <!-- Rating con estrellas -->
+                <p>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-secondary"></i>
+                  <span class="list-inline-item text-dark">Rating 4.8 | 40 comentarios</span>
+                </p>
               </div>
-            </div>
 
-            <!-- Producto 3 -->
-            <div class="col-12 col-md-4">
-              <div class="card border-0 shadow-lg h-100">
-                <div class="position-relative">
-                  <img src="./assets/img/productos/adidas-performance-4148.webp" class="card-img-top">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title fw-bold">
-                    <a href="#" class="text-decoration-none text-dark">Nike Air Max</a>
-                  </h5>
-                  <p class="card-text text-muted">La mejor tecnología de Nike</p>
-                  <button class="btn btn-primary w-100">Comprar</button>
-                </div>
-              </div>
-            </div>
+              <h6 class="font-weight-bold">Descripción:</h6>
+              <p class="text-muted">Zapatillas de rendimiento superior para un estilo de vida activo, combinando
+                comodidad y resistencia para entrenamientos y uso diario.</p>
 
-            <!-- Producto 4 -->
-            <div class="col-12 col-md-4">
-              <div class="card border-0 shadow-lg h-100">
-                <div class="position-relative">
-                  <img src="./assets/img/productos/adidas-performance-4246-2359262-1.webp" class="card-img-top">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title fw-bold">
-                    <a href="#" class="text-decoration-none text-dark">Nike Air Max</a>
-                  </h5>
-                  <p class="card-text text-muted">La mejor tecnología de Nike</p>
-                  <button class="btn btn-primary w-100">Comprar</button>
-                </div>
+              <!-- Selección de color -->
+              <h6 class="font-weight-bold">Color:</h6>
+              <div class="btn-group" role="group" aria-label="Seleccionar color">
+                <button type="button" class="btn btn-outline-danger">Rojo</button>
+                <button type="button" class="btn btn-outline-dark">Negro</button>
+                <button type="button" class="btn btn-outline-primary">Azul</button>
               </div>
-            </div>
 
-            <!-- Producto 5 -->
-            <div class="col-12 col-md-4">
-              <div class="card border-0 shadow-lg h-100">
-                <div class="position-relative">
-                  <img src="./assets/img/productos/adidas-performance.webp" class="card-img-top">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title fw-bold">
-                    <a href="#" class="text-decoration-none text-dark">Nike Air Max</a>
-                  </h5>
-                  <p class="card-text text-muted">La mejor tecnología de Nike</p>
-                  <button class="btn btn-primary w-100">Comprar</button>
-                </div>
-              </div>
-            </div>
+              <!-- Especificaciones -->
+              <h6 class="font-weight-bold">Especificaciones:</h6>
+              <ul class="list-unstyled">
+                <li>Material: Cuero</li>
+                <li>Modelo: 2022</li>
+              </ul>
 
-            <!-- Producto 6 -->
-            <div class="col-12 col-md-4">
-              <div class="card border-0 shadow-lg h-100">
-                <div class="position-relative">
-                  <img src="./assets/img/productos/nike-0560-7160362-1.webp" class="card-img-top">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title fw-bold">
-                    <a href="#" class="text-decoration-none text-dark">Nike Air Max</a>
-                  </h5>
-                  <p class="card-text text-muted">La mejor tecnología de Nike</p>
-                  <button class="btn btn-primary w-100">Comprar</button>
-                </div>
-              </div>
-            </div>
+              <!-- Selección de tallas -->
+              <h6 class="font-weight-bold">Tallas:</h6>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="btn btn-sm btn-outline-primary">38</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn btn-sm btn-outline-primary">39</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn btn-sm btn-outline-primary">40</a>
+                </li>
+              </ul>
 
-            <!-- Producto 7 -->
-            <div class="col-12 col-md-4">
-              <div class="card border-0 shadow-lg h-100">
-                <div class="position-relative">
-                  <img src="./assets/img/productos/nike-0677-5914842-1.webp" class="card-img-top">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title fw-bold">
-                    <a href="#" class="text-decoration-none text-dark">Nike Air Max</a>
-                  </h5>
-                  <p class="card-text text-muted">La mejor tecnología de Nike</p>
-                  <button class="btn btn-primary w-100">Comprar</button>
-                </div>
+              <!-- Cantidad dinámica -->
+              <h6 class="font-weight-bold">Cantidad:</h6>
+              <div class="input-group mb-3" style="max-width: 150px;">
+                <button class="btn btn-outline-secondary" type="button" id="decrement-btn">-</button>
+                <input type="number" class="form-control text-center" id="quantity" value="1" min="1">
+                <button class="btn btn-outline-secondary" type="button" id="increment-btn">+</button>
               </div>
-            </div>
 
-            <!-- Producto 8 -->
-            <div class="col-12 col-md-4">
-              <div class="card border-0 shadow-lg h-100">
-                <div class="position-relative">
-                  <img src="./assets/img/productos/nike-1612-8742262-1.webp" class="card-img-top">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title fw-bold">
-                    <a href="#" class="text-decoration-none text-dark">Nike Air Max</a>
-                  </h5>
-                  <p class="card-text text-muted">La mejor tecnología de Nike</p>
-                  <button class="btn btn-primary w-100">Comprar</button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Producto 9 -->
-            <div class="col-12 col-md-4">
-              <div class="card border-0 shadow-lg h-100">
-                <div class="position-relative">
-                  <img src="./assets/img/productos/nike-1864-3518642-1.webp" class="card-img-top">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title fw-bold">
-                    <a href="#" class="text-decoration-none text-dark">Nike Air Max</a>
-                  </h5>
-                  <p class="card-text text-muted">La mejor tecnología de Nike</p>
-                  <button class="btn btn-primary w-100">Comprar</button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Producto 10 -->
-            <div class="col-12 col-md-4">
-              <div class="card border-0 shadow-lg h-100">
-                <div class="position-relative">
-                  <img src="./assets/img/productos/nike-8011-2037362-1.webp" class="card-img-top">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title fw-bold">
-                    <a href="#" class="text-decoration-none text-dark">Nike Air Max</a>
-                  </h5>
-                  <p class="card-text text-muted">La mejor tecnología de Nike</p>
-                  <button class="btn btn-primary w-100">Comprar</button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Producto 11 -->
-            <div class="col-12 col-md-4">
-              <div class="card border-0 shadow-lg h-100">
-                <div class="position-relative">
-                  <img src="./assets/img/productos/nike-8066-0927362-1.webp" class="card-img-top">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title fw-bold">
-                    <a href="#" class="text-decoration-none text-dark">Nike Air Max</a>
-                  </h5>
-                  <p class="card-text text-muted">La mejor tecnología de Nike</p>
-                  <button class="btn btn-primary w-100">Comprar</button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Producto 12 -->
-            <div class="col-12 col-md-4">
-              <div class="card border-0 shadow-lg h-100">
-                <div class="position-relative">
-                  <img src="./assets/img/productos/nike-8905-0563552-1.webp" class="card-img-top">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title fw-bold">
-                    <a href="#" class="text-decoration-none text-dark">Nike Air Max</a>
-                  </h5>
-                  <p class="card-text text-muted">La mejor tecnología de Nike</p>
-                  <button class="btn btn-primary w-100">Comprar</button>
-                </div>
-              </div>
+              <!-- Botón para agregar al carrito -->
+              <button class="btn btn-lg btn-primary w-100 mt-4" type="button">
+                <i class="fas fa-cart-plus"></i> Agregar al carrito
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
+  </div>
 
 
   <!-- PIE DE PAGINA -->
@@ -338,6 +211,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/productos.js"></script>
 </body>
 
 </html>

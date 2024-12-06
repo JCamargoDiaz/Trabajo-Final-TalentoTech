@@ -11,3 +11,9 @@ decrementBtn.addEventListener("click", function () {
     quantityInput.value = parseInt(quantityInput.value) - 1;
   }
 });
+
+// codigo para cambiar imagen principal
+function changeMainImage(thumbnail) {
+  const mainImage = document.getElementById("mainImage");
+  mainImage.src = thumbnail.src;
+}

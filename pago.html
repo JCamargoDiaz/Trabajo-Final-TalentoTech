@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pago</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+  <div class="container col-md-4 bg-light p-3 mt-5 shadow">
+    <div class="payment-form">
+      <h1 class="text-center">Datos de Pago</h1>
+      <form id="payment-form">
+        <!-- Campo de Número de Tarjeta -->
+        <div class="form-group position-relative mb-3">
+          <label for="card-number">Número de Tarjeta</label>
+          <div class="input-group">
+            <span class="input-group-text form-icon">
+              <i class="fas fa-credit-card"></i>
+            </span>
+            <input type="text" class="form-control" id="card-number" placeholder="1234 5678 9012 3456" required>
+          </div>
+        </div>
+
+        <!-- Campo de Fecha de Expiración -->
+        <div class="form-group position-relative mb-3">
+          <label for="expiry-date">Fecha de Expiración (MM/AA)</label>
+          <div class="input-group">
+            <span class="input-group-text form-icon">
+              <i class="far fa-calendar-alt"></i>
+            </span>
+            <input type="text" class="form-control" id="expiry-date" placeholder="MM/AA" required>
+          </div>
+        </div>
+
+        <!-- Campo de CVC -->
+        <div class="form-group position-relative mb-4">
+          <label for="cvc">CVC</label>
+          <div class="input-group">
+            <span class="input-group-text form-icon">
+              <i class="fas fa-lock"></i>
+            </span>
+            <input type="text" class="form-control" id="cvc" placeholder="123" required>
+          </div>
+        </div>
+
+        <!-- Botón de Pagar -->
+        <button type="submit" class="btn btn-primary btn-lg w-100">Pagar</button>
+      </form>
+    </div>
+  </div>
+  <!-- JS de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
